@@ -1,0 +1,48 @@
+{
+  "name": "create-nodecg",
+  "description": "CLI for creating different types of NodeCG Bundles.",
+  "version": "0.0.0",
+  "author": "devJimmyboy @Jimmyboy-dev",
+  "bin": {
+    "create-nodecg": "./bin/run"
+  },
+  "bugs": "https://github.com/devJimmyboy/create-nodecg/issues",
+  "dependencies": {
+    "@oclif/command": "^1",
+    "@oclif/config": "^1",
+    "@oclif/plugin-help": "^3",
+    "chalk": "^4.1.2",
+    "inquirer": "^8.1.2",
+    "ora": "^5.4.1"
+  },
+  "devDependencies": {
+    "@oclif/dev-cli": "^1",
+    "@oclif/test": "^1",
+    "@types/inquirer": "^7.3.3",
+    "chai": "^4",
+    "mocha": "^5",
+    "nyc": "^14"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "files": [
+    "/bin",
+    "/src"
+  ],
+  "homepage": "https://github.com/devJimmyboy/create-nodecg",
+  "keywords": [
+    "oclif"
+  ],
+  "license": "MIT",
+  "main": "src/index.js",
+  "oclif": {
+    "bin": "create-nodecg"
+  },
+  "repository": "devJimmyboy/create-nodecg",
+  "scripts": {
+    "prepack": "oclif-dev readme",
+    "test": "nyc mocha --forbid-only \"test/**/*.test.js\"",
+    "version": "oclif-dev readme && git add README.md"
+  }
+}
